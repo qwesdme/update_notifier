@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "update_notifier"
+version = "0.1.0"
+description = ""
+authors = ["qwesdme <qwesdme@gmail.com>"]
+readme = "README.md"
+packages = [{include = "update_notifier"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+azure-devops = "^7.1.0b3"
+packaging = "^23.1"
+artifacts-keyring = "^0.3.3"
+colorama = "^0.4.6"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
